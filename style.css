@@ -1,0 +1,518 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5e6d3;
+    color: #4e342e;
+}
+
+/* Navigation */
+.navbar {
+    background: #8d6e63;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #fff8f0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fffaf4;
+    background: linear-gradient(135deg, #b08a6a, #8d6e63);
+    padding: 12px 20px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: linear-gradient(135deg, #9c7759, #6d4c41);
+    transform: translateY(-2px);
+}
+
+/* Banner */
+.hero {
+    width: 100%;
+    height: 180px;
+    background-image: url("BannerWald.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Inhaltsbox */
+.content-box {
+    position: relative;
+    max-width: 1100px;
+    margin: 30px auto 60px auto;
+    background-color: rgba(255, 248, 240, 0.92);
+    border-radius: 24px;
+    padding: 50px;
+    box-shadow: 0 8px 22px rgba(78, 52, 46, 0.15);
+    min-height: 320px;
+    text-align: center;
+}
+
+/* Text */
+.text-content {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 12px;
+    color: #4e342e;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #6d4c41;
+    margin-bottom: 28px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #5d4037;
+    margin-bottom: 18px;
+}
+
+/* NUR dein Profilbild */
+.profilbild {
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    width: 180px;
+    height: auto;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 6px 18px rgba(78, 52, 46, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .text-content {
+        max-width: 100%;
+    }
+
+    .profilbild {
+        position: static;
+        display: block;
+        margin: 30px auto 0 auto;
+        width: 160px;
+    }
+
+    .content-box {
+        padding: 30px 20px;
+    }
+}
+
+/* Projekte-Seite */
+.projekte-page {
+    padding-top: 40px;
+}
+
+.page-header {
+    margin-bottom: 40px;
+}
+
+.page-intro {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #5d4037;
+    max-width: 900px;
+}
+
+/* Grid für Projektkarten */
+.projekt-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-top: 30px;
+}
+
+/* Einzelne Projektkarte */
+.projekt-card {
+    background: rgba(255, 248, 240, 0.96);
+    border: 1px solid rgba(141, 110, 99, 0.18);
+    border-radius: 22px;
+    box-shadow: 0 8px 20px rgba(78, 52, 46, 0.12);
+    padding: 28px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projekt-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 26px rgba(78, 52, 46, 0.18);
+}
+
+.projekt-content h3 {
+    font-size: 24px;
+    color: #4e342e;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.projekt-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #5d4037;
+    margin-bottom: 14px;
+}
+
+/* Buttons in den Projektkarten */
+.projekt-buttons {
+    margin-top: 20px;
+}
+
+.projekt-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fffaf4;
+    background: linear-gradient(135deg, #b08a6a, #8d6e63);
+    padding: 12px 20px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(78, 52, 46, 0.18);
+}
+
+.projekt-button:hover {
+    background: linear-gradient(135deg, #9c7759, #6d4c41);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(78, 52, 46, 0.24);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .projekt-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projekt-card {
+        padding: 22px;
+    }
+
+    .projekt-content h3 {
+        font-size: 21px;
+    }
+}
+
+/* =========================================================
+   GEMEINSAME ERWEITERUNGEN FÜR UNTERSEITEN
+   ========================================================= */
+
+.content-wide {
+    position: relative;
+    max-width: 1100px;
+    margin: 30px auto 60px auto;
+    background-color: rgba(255, 248, 240, 0.94);
+    border-radius: 24px;
+    padding: 50px;
+    box-shadow: 0 8px 22px rgba(78, 52, 46, 0.15);
+    text-align: center;
+}
+
+.content-wide .page-header,
+.content-wide .info-card,
+.content-wide .highlight-box,
+.content-wide .quote-box,
+.content-wide .projekt-card,
+.content-wide .creative-card,
+.content-wide .soft-section {
+    text-align: center;
+}
+
+.page-header {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.page-header h1 {
+    margin-bottom: 10px;
+}
+
+.page-subtitle {
+    font-size: 22px;
+    color: #6d4c41;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.page-intro {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #5d4037;
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.info-card {
+    background: rgba(255, 252, 248, 0.96);
+    border: 1px solid rgba(141, 110, 99, 0.16);
+    border-radius: 20px;
+    padding: 26px;
+    box-shadow: 0 8px 18px rgba(78, 52, 46, 0.08);
+    text-align: center;
+}
+
+.info-card h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #4e342e;
+    font-size: 22px;
+}
+
+.info-card p,
+.info-card li {
+    color: #5d4037;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.info-card ul {
+    padding-left: 0;
+    margin: 0 auto;
+    list-style: none;
+    display: inline-block;
+    text-align: left;
+}
+
+.badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 14px 0 0 0;
+    justify-content: center;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #e8d4bc, #d8b896);
+    color: #4e342e;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid rgba(141, 110, 99, 0.18);
+}
+
+.highlight-box {
+    margin-top: 30px;
+    padding: 24px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(232, 212, 188, 0.65), rgba(255, 248, 240, 0.95));
+    border: 1px solid rgba(141, 110, 99, 0.14);
+    text-align: center;
+}
+
+.highlight-box h3 {
+    margin-top: 0;
+    color: #4e342e;
+}
+
+.quote-box {
+    margin-top: 28px;
+    padding: 22px 24px;
+    border-left: 5px solid #b08a6a;
+    border-right: 5px solid #b08a6a;
+    background: rgba(255, 248, 240, 0.9);
+    border-radius: 18px;
+    color: #5d4037;
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.side-image {
+    width: 190px;
+    height: auto;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 6px 18px rgba(78, 52, 46, 0.2);
+}
+
+/* =========================================================
+   PROJEKTE – EDLER MIT BADGES
+   ========================================================= */
+
+.projekt-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-top: 30px;
+}
+
+.projekt-card {
+    background: rgba(255, 248, 240, 0.98);
+    border: 1px solid rgba(141, 110, 99, 0.16);
+    border-radius: 22px;
+    box-shadow: 0 8px 20px rgba(78, 52, 46, 0.12);
+    padding: 28px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.projekt-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 26px rgba(78, 52, 46, 0.18);
+}
+
+.card-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 24px;
+    color: #4e342e;
+    text-align: center;
+}
+
+.card-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e8d4bc, #d4b08c);
+    color: #4e342e;
+    font-size: 22px;
+    box-shadow: 0 4px 10px rgba(78, 52, 46, 0.12);
+}
+
+.projekt-card p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #5d4037;
+    margin-bottom: 14px;
+}
+
+.projekt-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fffaf4;
+    background: linear-gradient(135deg, #b08a6a, #8d6e63);
+    padding: 12px 20px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(78, 52, 46, 0.18);
+}
+
+.projekt-button:hover {
+    background: linear-gradient(135deg, #9c7759, #6d4c41);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(78, 52, 46, 0.24);
+}
+
+/* =========================================================
+   KREATIVES
+   ========================================================= */
+
+.creative-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.creative-card {
+    background: rgba(255, 252, 248, 0.96);
+    border: 1px solid rgba(141, 110, 99, 0.16);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 8px 18px rgba(78, 52, 46, 0.08);
+    min-height: 220px;
+    text-align: center;
+}
+
+.creative-card h3 {
+    margin-top: 0;
+    color: #4e342e;
+}
+
+.creative-card p {
+    color: #5d4037;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* =========================================================
+   GANZHEITLICHE THERAPIEN
+   ========================================================= */
+
+.soft-section {
+    background: rgba(255, 251, 247, 0.95);
+    border: 1px solid rgba(141, 110, 99, 0.1);
+    border-radius: 22px;
+    padding: 28px;
+    margin-top: 24px;
+    box-shadow: 0 8px 18px rgba(78, 52, 46, 0.06);
+    text-align: center;
+}
+
+.soft-section h3 {
+    margin-top: 0;
+    color: #4e342e;
+}
+
+.soft-section p,
+.soft-section li {
+    color: #5d4037;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+    .content-wide {
+        padding: 30px 20px;
+    }
+
+    .info-grid,
+    .projekt-grid,
+    .creative-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-title {
+        font-size: 21px;
+    }
+}
