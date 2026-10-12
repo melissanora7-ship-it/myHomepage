@@ -609,3 +609,70 @@ p {
         grid-template-columns: minmax(0, 1fr);
     }
 }
+
+/* =========================================================
+   ERGÄNZUNGEN: Werdegang, Abschnittstitel, Bildpaar
+   ========================================================= */
+
+.weg {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.weg-schritt {
+    background: rgba(255, 252, 248, 0.96);
+    border: 1px solid rgba(141, 110, 99, 0.16);
+    border-radius: 18px;
+    padding: 20px;
+}
+
+.weg-schritt strong {
+    display: block;
+    color: #4e342e;
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.weg-schritt p {
+    font-size: 15px;
+    margin: 0;
+}
+
+.weg-zeit {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #b08a6a, #8d6e63);
+    color: #fffaf4;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.abschnitt-titel {
+    margin-top: 40px;
+    color: #4e342e;
+}
+
+.bild-paar {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.bild-paar .projekt-bild {
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.content-wide .info-grid {
+    margin-bottom: 24px;
+}
+
+@media (max-width: 900px) {
+    .weg {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
