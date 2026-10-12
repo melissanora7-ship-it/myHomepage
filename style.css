@@ -533,3 +533,41 @@ p {
 .projekt-buttons .projekt-button {
     margin: 4px;
 }
+
+/* =========================================================
+   STARTSEITE – Foto neben dem Text statt in der Ecke
+   ========================================================= */
+
+.content-box {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: 48px;
+    align-items: center;
+}
+
+.content-box .text-content {
+    max-width: none;
+}
+
+.content-box .profilbild {
+    position: static;
+    width: 220px;
+}
+
+@media (max-width: 900px) {
+    .content-box {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .content-box .profilbild {
+        width: 180px;
+        margin: 0 auto;
+    }
+
+    .content-box,
+    .content-wide {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
