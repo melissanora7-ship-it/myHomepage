@@ -2,6 +2,8 @@
 
 Willkommen auf meiner persönlichen Portfolio-Website.
 
+**Live:** https://melissanora7-ship-it.github.io/myHomepage/
+
 ## Über mich
 
 Ich absolviere derzeit eine Umschulung zur Fachinformatikerin für Anwendungsentwicklung bei der GFN in Freiburg.
@@ -11,7 +13,7 @@ Zuvor war ich im Bereich Ergotherapie tätig und verbinde heute analytisches Den
 ## Inhalte der Website
 
 - Über mich
-- Projekte
+- Projekte – u. a. die [FIAE Lernapp](https://lernapp-eta-seven.vercel.app/) und die [ATAYA Community App](https://ataya-app-liard.vercel.app/)
 - Ganzheitliche Therapien
 - Kreatives
 
@@ -19,7 +21,8 @@ Zuvor war ich im Bereich Ergotherapie tätig und verbinde heute analytisches Den
 
 - HTML
 - CSS
-- JavaScript
+- JavaScript (sanftes Einblenden beim Scrollen)
+- Responsive Design, optimierte WebP-Bilder
 - GitHub Pages
 
 ## Ziel

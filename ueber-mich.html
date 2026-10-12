@@ -1,28 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Über mich | Melissa Becker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav class="navbar">
-            <div class="logo">Melissa Becker</div>
-            <div class="nav-links">
-                <a href="index.html">Start</a>
-                <a href="ueber-mich.html">Über mich</a>
-                <a href="projekte.html">Projekte</a>
-                <a href="ganzheitliche-therapien.html">Therapien</a>
-                <a href="kreatives.html">Kreatives</a>
-            </div>
+    <header class="navbar">
+        <a href="index.html" class="logo">Melissa Becker</a>
+        <nav class="nav-links" aria-label="Hauptnavigation">
+            <a href="index.html">Start</a>
+            <a href="ueber-mich.html" aria-current="page">Über mich</a>
+            <a href="projekte.html">Projekte</a>
+            <a href="ganzheitliche-therapien.html">Therapien</a>
+            <a href="kreatives.html">Kreatives</a>
         </nav>
     </header>
 
-    <div class="hero"></div>
+    <div class="hero" role="img" aria-label="Nebliger Wald im Morgenlicht"></div>
 
     <main class="content-wide">
         <div class="page-header">
@@ -36,7 +36,7 @@
         </div>
 
         <div class="info-grid">
-            <section class="info-card">
+            <section class="info-card einblenden">
                 <h3>Mein beruflicher Weg</h3>
                 <p>
                     Ich arbeite gezielt daran, mich fachlich und praktisch im Bereich der Anwendungsentwicklung
@@ -45,7 +45,7 @@
                 </p>
             </section>
 
-            <section class="info-card">
+            <section class="info-card einblenden">
                 <h3>Weiterbildung & Eigeninitiative</h3>
                 <p>
                    Neben der Umschulung zur FIAE bei der GFN Freiburg bilde ich mich durch einen Full-Stack-Developer-Kurs bei Mimo 
@@ -58,7 +58,7 @@
                 </div>
             </section>
 
-            <section class="info-card">
+            <section class="info-card einblenden">
                 <h3>Was mich auszeichnet</h3>
                 <ul>
                     <li>Strukturierte und sorgfältige Arbeitsweise</li>
@@ -69,7 +69,7 @@
                 </ul>
             </section>
 
-            <section class="info-card">
+            <section class="info-card einblenden">
                 <h3>Mein Ziel</h3>
                 <p>
                     Ich möchte praktische Erfahrungen in der Software- und Webentwicklung sammeln,
@@ -79,28 +79,39 @@
             </section>
         </div>
 
-        <div class="highlight-box">
+        <div class="highlight-box einblenden zentriert">
             <h3>Technologien & Interessen</h3>
             <div class="badge-row">
                 <span class="badge">HTML</span>
                 <span class="badge">CSS</span>
                 <span class="badge">JavaScript</span>
+                <span class="badge">TypeScript</span>
+                <span class="badge">React</span>
+                <span class="badge">Next.js</span>
                 <span class="badge">Python</span>
+                <span class="badge">SQL / PostgreSQL</span>
+                <span class="badge">MongoDB</span>
+                <span class="badge">Git & GitHub</span>
                 <span class="badge">UI / Design</span>
                 <span class="badge">Responsive Layouts</span>
-                <span class="badge">IT-Grundlagen</span>
-                <span class="badge">Lernbereitschaft</span>
             </div>
         </div>
 
-        <div class="quote-box">
+        <div class="quote-box einblenden">
             Ich arbeite gerne an Lösungen, die nicht nur funktionieren, sondern auch
             übersichtlich, ansprechend und klar aufgebaut sind.
         </div>
     </main>
 
+    <footer>
+        <nav aria-label="Fußnavigation">
+            <a href="index.html">Start</a>
+            <a href="projekte.html">Projekte</a>
+            <a href="https://github.com/melissanora7-ship-it" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+        © 2026 Melissa Becker
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
-
-

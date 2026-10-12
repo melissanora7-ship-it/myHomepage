@@ -1,123 +1,156 @@
-
 <!DOCTYPE html>
-<html lang="de initial-scale=1.0"><html lang="de">
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekte | Melissa Becker</title>
+    <meta name="description" content="Projekte von Melissa Becker: FIAE Lernapp, ATAYA Community App und Lernprojekte aus der Umschulung.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav class="navbar">
-            <div class="logo">Melissa Becker</div>
-            <div class="nav-links">
-                <a href="index.html">Start</a>
-                <a href="ueber-mich.html">Über mich</a>
-                <a href="projekte.html">Projekte</a>
-                <a href="ganzheitliche-therapien.html">Therapien</a>
-                <a href="kreatives.html">Kreatives</a>
-            </div>
+    <header class="navbar">
+        <a href="index.html" class="logo">Melissa Becker</a>
+        <nav class="nav-links" aria-label="Hauptnavigation">
+            <a href="index.html">Start</a>
+            <a href="ueber-mich.html">Über mich</a>
+            <a href="projekte.html" aria-current="page">Projekte</a>
+            <a href="ganzheitliche-therapien.html">Therapien</a>
+            <a href="kreatives.html">Kreatives</a>
         </nav>
     </header>
 
-    <div class="hero"></div>
+    <div class="hero" role="img" aria-label="Nebliger Wald im Morgenlicht"></div>
 
     <main class="content-wide">
         <div class="page-header">
             <h1>Meine Projekte</h1>
-            <div class="page-subtitle">Lernprojekte, Webdesign und praktische Entwicklung</div>
+            <div class="page-subtitle">Echte Anwendungen, Webdesign und Lernprojekte</div>
             <p class="page-intro">
-                Hier zeige ich ausgewählte Projekte, an denen ich im Rahmen meiner Umschulung
-                und eigenständigen Weiterbildung gearbeitet habe. Mein Fokus liegt dabei auf
-                klarer Struktur, ansprechendem Design und verständlicher Umsetzung.
+                Hier zeige ich Projekte, an denen ich im Rahmen meiner Umschulung und eigenständig gearbeitet habe.
+                Mein Fokus liegt auf klarer Struktur, ansprechendem Design, sicherem Umgang mit Daten
+                und einer Umsetzung, die man auch ohne IT-Kenntnisse gut bedienen kann.
             </p>
         </div>
 
-        <section class="projekt-grid">
-
-            <article class="projekt-card">
-                <div class="card-top">
-                    <h3 class="card-title">Portfolio-Homepage</h3>
+        <div class="highlight-grid">
+            <article class="highlight einblenden" id="lernapp">
+                <img src="bilder/lernapp.webp" alt="Startseite der FIAE Lernapp" class="highlight-bild" loading="lazy" width="960" height="540">
+                <div class="highlight-text">
+                    <h3>FIAE Lernapp</h3>
+                    <div class="art">Lernplattform · Next.js</div>
+                    <p>Eine Lernplattform für die Umschulung zur Fachinformatikerin, die ich mit meiner Klasse teile.</p>
+                    <ul>
+                        <li>254 Themen aus den Lernfeldern 0 bis 9 mit Lehrgrafiken</li>
+                        <li>über 2.000 Übungen: Multiple Choice, Rechnen, Reihenfolgen, Code</li>
+                        <li>Karteikarten mit Karteikasten-System (Leitner)</li>
+                        <li>Programmier-Werkstatt: SQL, Python und JavaScript laufen im Browser und werden automatisch geprüft</li>
+                        <li>Zahlensysteme-Rechner mit Lösungsweg</li>
+                    </ul>
+                    <div class="badge-row">
+                        <span class="badge">Next.js 15</span><span class="badge">React</span><span class="badge">TypeScript</span>
+                        <span class="badge">MongoDB</span><span class="badge">Tailwind CSS</span><span class="badge">Docker</span>
+                    </div>
+                    <div class="button-reihe">
+                        <a href="https://lernapp-eta-seven.vercel.app/" class="button button-voll" target="_blank" rel="noopener">Lernapp öffnen</a>
+                    </div>
                 </div>
-                <p>
-                    Entwicklung einer persönlichen mehrseitigen Homepage mit Startseite, Navigation,
-                    Banner, Profilbereich und thematischen Unterseiten.
-                </p>
-                <div class="badge-row">
-                    <span class="badge">HTML</span>
-                    <span class="badge">CSS</span>
-                    <span class="badge">Layout</span>
-                    <span class="badge">Navigation</span>
-                </div>
-                <p>
-                    <strong>Gelernt:</strong> Verlinkungen, Seitenstruktur, CSS-Gestaltung,
-                    Bildintegration und insgesamt ein harmonisches Webdesign.
-                </p>
             </article>
 
-            <article class="projekt-card">
-                <div class="card-top">
-                    <h3 class="card-title">Webdesign-Übungen</h3>
+            <article class="highlight einblenden" id="ataya">
+                <img src="bilder/ataya-app.webp" alt="Startseite der ATAYA Community App" class="highlight-bild" loading="lazy" width="960" height="540">
+                <div class="highlight-text">
+                    <h3>ATAYA Community App</h3>
+                    <div class="art">Mitglieder-App · React &amp; Supabase</div>
+                    <p>
+                        Eine geschlossene App für die Community des ATAYA-Zentrums in Freiburg –
+                        ehrenamtlich entwickelt und komplett kostenlos betrieben.
+                    </p>
+                    <ul>
+                        <li>Echtzeit-Chat in Gruppen und privat</li>
+                        <li>Kalender mit Seminaren, Neuigkeiten und Fotogalerie</li>
+                        <li>Wissensseiten zu Yoga, vedischer Astrologie und Kundalini Care</li>
+                        <li>Datenschutz in der Datenbank selbst (Row Level Security), abgesichert durch automatische Tests</li>
+                        <li>Aufs Handy installierbar (Progressive Web App)</li>
+                    </ul>
+                    <div class="badge-row">
+                        <span class="badge">React 19</span><span class="badge">TypeScript</span><span class="badge">Vite</span>
+                        <span class="badge">Supabase</span><span class="badge">PostgreSQL</span><span class="badge">PWA</span>
+                    </div>
+                    <div class="button-reihe">
+                        <a href="https://ataya-app-liard.vercel.app/" class="button button-voll" target="_blank" rel="noopener">Zur App</a>
+                        <a href="https://www.ataya-freiburg.de/" class="button button-rand" target="_blank" rel="noopener">ATAYA Freiburg</a>
+                    </div>
+                    <p class="hinweis">Die App ist nur für Mitglieder – neue Anmeldungen werden persönlich freigeschaltet.</p>
                 </div>
+            </article>
+        </div>
+
+        <h2 class="unter-ueberschrift einblenden">Weitere Lernprojekte</h2>
+
+        <section class="projekt-grid">
+            <article class="projekt-card einblenden">
+                <h3>Portfolio-Homepage</h3>
+                <p>
+                    Diese mehrseitige Homepage mit Navigation, Banner, Profilbereich und
+                    thematischen Unterseiten – responsiv für Handy und Desktop.
+                </p>
+                <div class="badge-row">
+                    <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JavaScript</span><span class="badge">GitHub Pages</span>
+                </div>
+                <p><strong>Gelernt:</strong> Seitenstruktur, CSS-Gestaltung, Bildoptimierung und ein harmonisches Gesamtbild.</p>
+            </article>
+
+            <article class="projekt-card einblenden">
+                <h3>Webdesign-Übungen</h3>
                 <p>
                     Übungen zu Farbharmonie, Typografie, Buttons, Karten-Layouts,
                     Hover-Effekten und visuell sauberem Seitenaufbau.
                 </p>
                 <div class="badge-row">
-                    <span class="badge">CSS</span>
-                    <span class="badge">Farben</span>
-                    <span class="badge">Buttons</span>
-                    <span class="badge">Benutzerführung</span>
+                    <span class="badge">CSS</span><span class="badge">Farben</span><span class="badge">Typografie</span><span class="badge">Benutzerführung</span>
                 </div>
-                <p>
-                    <strong>Gelernt:</strong> Wie stark gute Gestaltung die Wirkung
-                    und Verständlichkeit einer Website verbessert.
-                </p>
+                <p><strong>Gelernt:</strong> Wie stark gute Gestaltung die Wirkung und Verständlichkeit einer Website verbessert.</p>
             </article>
 
-            <article class="projekt-card">
-                <div class="card-top">
-                    <h3 class="card-title">Lernaufgaben Anwendungsentwicklung</h3>
-                </div>
+            <article class="projekt-card einblenden">
+                <h3>Lernaufgaben Anwendungsentwicklung</h3>
                 <p>
-                    Bearbeitung praxisnaher Aufgaben im Rahmen meiner Umschulung zur
-                    Fachinformatikerin für Anwendungsentwicklung.
+                    Praxisnahe Aufgaben im Rahmen meiner Umschulung zur
+                    Fachinformatikerin für Anwendungsentwicklung, zum Beispiel ein Zahlenratespiel in Python.
                 </p>
                 <div class="badge-row">
-                    <span class="badge">Problemlösung</span>
-                    <span class="badge">Struktur</span>
-                    <span class="badge">Analytisches Denken</span>
+                    <span class="badge">Python</span><span class="badge">Problemlösung</span><span class="badge">Analytisches Denken</span>
                 </div>
-                <p>
-                    <strong>Gelernt:</strong> Aufgaben zu analysieren, Lösungen Schritt für Schritt
-                    umzusetzen und Ergebnisse verständlich aufzubauen.
-                </p>
+                <p><strong>Gelernt:</strong> Aufgaben zu analysieren und Lösungen Schritt für Schritt umzusetzen.</p>
             </article>
 
-            <article class="projekt-card">
-                <div class="card-top">
-                    <h3 class="card-title">Eigenständige Weiterbildung</h3>
-                </div>
+            <article class="projekt-card einblenden">
+                <h3>Eigenständige Weiterbildung</h3>
                 <p>
                     Zusätzliche Weiterentwicklung über digitale Lernangebote und Zertifikate
-                    im Bereich KI-Tools, Networking und Webentwicklung.
+                    im Bereich KI-Werkzeuge, Netzwerktechnik und Webentwicklung.
                 </p>
                 <div class="badge-row">
-                    <span class="badge">Copilot</span>
-                    <span class="badge">Cisco</span>
-                    <span class="badge">Mimo</span>
-                    <span class="badge">Selbststudium</span>
+                    <span class="badge">Copilot</span><span class="badge">Cisco</span><span class="badge">Mimo</span><span class="badge">Selbststudium</span>
                 </div>
-                <p>
-                    <strong>Gelernt:</strong> Kontinuierlich dranzubleiben, neue Themen
-                    eigenständig zu erschließen und mein Profil gezielt auszubauen.
-                </p>
+                <p><strong>Gelernt:</strong> Dranzubleiben, neue Themen eigenständig zu erschließen und mein Profil gezielt auszubauen.</p>
             </article>
-
         </section>
     </main>
 
+    <footer>
+        <nav aria-label="Fußnavigation">
+            <a href="index.html">Start</a>
+            <a href="ueber-mich.html">Über mich</a>
+            <a href="https://github.com/melissanora7-ship-it" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+        © 2026 Melissa Becker
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-``
-<head>
-    <meta charset="UTF-8">

@@ -1,28 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ganzheitliche Therapien | Melissa Becker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav class="navbar">
-            <div class="logo">Melissa Becker</div>
-            <div class="nav-links">
-                <a href="index.html">Start</a>
-                <a href="ueber-mich.html">Über mich</a>
-                <a href="projekte.html">Projekte</a>
-                <a href="ganzheitliche-therapien.html">Therapien</a>
-                <a href="kreatives.html">Kreatives</a>
-            </div>
+    <header class="navbar">
+        <a href="index.html" class="logo">Melissa Becker</a>
+        <nav class="nav-links" aria-label="Hauptnavigation">
+            <a href="index.html">Start</a>
+            <a href="ueber-mich.html">Über mich</a>
+            <a href="projekte.html">Projekte</a>
+            <a href="ganzheitliche-therapien.html" aria-current="page">Therapien</a>
+            <a href="kreatives.html">Kreatives</a>
         </nav>
     </header>
 
-    <div class="hero"></div>
+    <div class="hero" role="img" aria-label="Nebliger Wald im Morgenlicht"></div>
 
     <main class="content-wide">
         <div class="page-header">
@@ -35,7 +35,7 @@
             </p>
         </div>
 
-        <section class="soft-section">
+        <section class="soft-section einblenden">
             <h3>Mein Blick auf Ganzheitlichkeit</h3>
             <p>
                 Ganzheitlichkeit bedeutet für mich, verschiedene Ebenen zusammenzudenken:
@@ -45,7 +45,7 @@
             </p>
         </section>
 
-        <section class="soft-section">
+        <section class="soft-section einblenden">
             <h3>Was mich an diesem Bereich anspricht</h3>
             <p>
                 Mich interessiert besonders die ruhige, ausgleichende und bewusste Ausrichtung
@@ -54,7 +54,7 @@
             </p>
         </section>
 
-        <section class="soft-section">
+        <section class="soft-section einblenden">
             <h3>Wofür diese Seite steht</h3>
             <p>
                 Diese Unterseite ist als stiller, harmonischer Bereich innerhalb meiner Homepage
@@ -63,12 +63,21 @@
             </p>
         </section>
 
-        <div class="quote-box">
+        <div class="quote-box einblenden">
             Ruhe, Klarheit und ein bewusster Blick auf Zusammenhänge sind für mich
             wertvolle Elemente persönlicher und fachlicher Entwicklung.
         </div>
     </main>
 
+    <footer>
+        <nav aria-label="Fußnavigation">
+            <a href="index.html">Start</a>
+            <a href="projekte.html">Projekte</a>
+            <a href="https://github.com/melissanora7-ship-it" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+        © 2026 Melissa Becker
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
