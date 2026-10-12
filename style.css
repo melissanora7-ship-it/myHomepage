@@ -522,8 +522,12 @@ p {
    ========================================================= */
 
 .projekt-bild {
+    display: block;
     width: 100%;
+    max-width: 720px;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 16px;
     border: 1px solid rgba(141, 110, 99, 0.18);
     box-shadow: 0 6px 16px rgba(78, 52, 46, 0.12);
@@ -569,5 +573,39 @@ p {
     .content-wide {
         margin-left: 16px;
         margin-right: 16px;
+    }
+}
+
+/* Spalten nie breiter als der Platz (Firefox) + eigene Apps über die volle Breite */
+.projekt-grid,
+.info-grid,
+.creative-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.creative-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.content-box {
+    grid-template-columns: minmax(0, 1fr) 220px;
+}
+
+.projekt-card-gross {
+    grid-column: 1 / -1;
+}
+
+.projekt-card-gross p {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 900px) {
+    .projekt-grid,
+    .info-grid,
+    .creative-grid,
+    .content-box {
+        grid-template-columns: minmax(0, 1fr);
     }
 }
