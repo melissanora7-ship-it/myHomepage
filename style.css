@@ -676,3 +676,7 @@ p {
         grid-template-columns: minmax(0, 1fr);
     }
 }
+
+.info-card-breit {
+    grid-column: 1 / -1;
+}
